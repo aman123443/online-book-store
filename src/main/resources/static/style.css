@@ -1,0 +1,127 @@
+/* === Typography === */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* === Card Styling === */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* === Book Cover Image === */
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* === Button Enhancements === */
+.btn {
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 8px rgba(0,0,0,0.15);
+}
+
+/* === Dark Mode Classes (optional) === */
+.bg-dark-mode {
+    background-color: #121212 !important;
+}
+.text-dark-mode {
+    color: #e0e0e0 !important;
+}
+
+/* === Navbar Brand === */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* === Section Header === */
+h1, h2, h5 {
+    letter-spacing: 0.5px;
+}
+
+/* === Welcome Banner === */
+.welcome-banner {
+    background: linear-gradient(90deg, #0d6efd, #6f42c1);
+    color: #fff;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* === Search Field === */
+#searchInput {
+    border-radius: 8px;
+}
+
+/* === Image Preview in Add Book === */
+#preview {
+    max-height: 200px;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+/* === Pagination Buttons === */
+.pagination .page-item .page-link {
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+.pagination .page-item.active .page-link {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+/* === Rating Glow === */
+.btn-warning.rated {
+    background-color: gold;
+    color: black;
+    font-weight: bold;
+}
+
+/* === Toasts (if used) === */
+.toast {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* <!-- Add to your style.css --> */
+.card {
+  transition: transform 0.3s cubic-bezier(.25,.8,.25,1), box-shadow 0.3s;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  border-radius: 1rem;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(4px);
+}
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+}
+.btn-animated {
+transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.btn-animated:hover {
+  background: linear-gradient(90deg, #6dd5ed 0%, #2193b0 100%);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(33,147,176,0.18);
+}
+.fade-in {
+  animation: fadeIn 0.7s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
